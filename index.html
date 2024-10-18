@@ -33,18 +33,29 @@
 					</header>
 
 				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="/">Projects</a></li>
-							<li><a href="papers.html">Papers</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							
-							<li><a href="https://github.com/arnavmaniar" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
+				<nav id="nav">
+					<ul class="links">
+						<li class="active"><a href="/">Projects</a></li>
+						<li><a href="papers.html">Papers</a></li>
+						<li><a href="elements.html">Elements Reference</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://github.com/arnavmaniar" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/arnav-maniar-513436282" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" id="todoIcon" class="icon solid fa-clipboard"><span class="label">To-Do List</span></a></li>
+					</ul>
+				</nav>
+			
+				<!-- To-Do List Popup -->
+				<div id="todoPopup" class="popup" style="display: none;">
+					<div class="popup-content">
+						<span class="close">&times;</span>
+						<h2>To-Do List</h2>
+						<ul id="todoList"></ul>
+						<input type="text" id="todoInput" placeholder="Add a new task">
+						<button id="addTodoBtn" class="button">Add</button>
+					</div>
+				</div>
 				<!-- Main -->
 					<div id="main">
 
@@ -59,36 +70,60 @@
 										 enhancing efficiency in emergency situations. </p>
 								</header>
 								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Learn More</a></li>
+									<ul class="actions special">
+										<li><button class="fullStoryBtn button large">Learn More</button></li>
+									</ul>
 								</ul>
+								<!-- Popup Div -->
+								<div class="popup">
+									<div class="popup-content">
+										<span class="close">&times;</span>
+										<h2>SearchCPT</h2>
+										<p>Here is the detailed text about SearchCPT...</p>
+									</div>
+								</div>
 							</article>
 
 						<!-- Posts -->
 							<section class="posts">
+								<!-- Predictive Share Pricing Section -->
 								<article>
 									<header>
-
-										<h2><a href="#">Predictive Share Pricing <br />
-											Machine Learning Model</a></h2>
+										<h2><a href="#">Predictive Share Pricing <br />Machine Learning Model</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p>Using share pricing changes since IPO of the Magnificent 7 to attempt to accurately forecast share prices. Library used is scikit-learn with OLS (Ordinary Least Squares) regression. Current Error ~ 15%. Planning to add investor sentiment from Reddit/X soon for more accurate predictions. </p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<!-- Full Story Button -->
+									<button class="fullStoryBtn button">Full Story</button>
+
+									<!-- Popup Div -->
+									<div class="popup">
+										<div class="popup-content">
+											<span class="close">&times;</span>
+											<h2>Predictive Share Pricing</h2>
+											<p>Here is the detailed text about Predictive Share Pricing...</p>
+										</div>
+									</div>
 								</article>
+
+								<!-- UNC Health BR RVU Prediction Section -->
 								<article>
 									<header>
-
-										<h2><a href="#">UNC Health Blue Ridge<br />
-										RVU Predictions with ML</a></h2>
+										<h2><a href="#">UNC Health Blue Ridge<br />RVU Predictions with ML</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p> Uitilizing a random forest model to predict RVU's for providers under UNC Health BR based on patient size and appointments in 2023. Raw data was provided by UNC Health BR, and was cleant and aggregated into one master file with all providers' data.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<p>Utilizing a random forest model to predict RVU's for providers under UNC Health BR based on patient size and appointments in 2023. Raw data was provided by UNC Health BR, and was cleaned and aggregated into one master file with all providers' data.</p>
+									<!-- Full Story Button -->
+									<button class="fullStoryBtn button">Full Story</button>
+
+									<!-- Popup Div -->
+									<div class="popup">
+										<div class="popup-content">
+											<span class="close">&times;</span>
+											<h2>RVU Predictions</h2>
+											<p>Here is the detailed text about RVU Predictions...</p>
+										</div>
+									</div>
 								</article>
 								<article>
 									<header>
@@ -110,9 +145,17 @@
 									</header>
 									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
 									<p>A terminal-based program that automatically calculates goodwill, equity, transaction adjustments, and valuations and balances the acquiring company's balance sheet in an M&A deal based on user inputs. </p>
-									<ul class="actions special">
-										
-									</ul>
+									<!-- Full Story Button -->
+									<button class="fullStoryBtn button">Full Story</button>
+
+									<!-- Popup Div -->
+									<div class="popup">
+										<div class="popup-content">
+											<span class="close">&times;</span>
+											<h2>M&A Balancer</h2>
+											<p>Here is the detailed text about M&A Balancer...</p>
+										</div>
+									</div>
 								</article>
 								<article>
 									<header>
@@ -122,9 +165,17 @@
 									</header>
 									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
 									<p> Analyzed S&P data since 1927 in R to find trends and visualize conclusions. Cleant, calculated, and visualized the best and worst days by index performance, and presented to 40+ students on the findings.</p> 
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<!-- Full Story Button -->
+									<button class="fullStoryBtn button">Full Story</button>
+
+									<!-- Popup Div -->
+									<div class="popup">
+										<div class="popup-content">
+											<span class="close">&times;</span>
+											<h2>S&P Data Analysis</h2>
+											<p>Here is the detailed text about S&P Data ...</p>
+										</div>
+									</div>
 								</article>
 								<article>
 									<header>
@@ -134,9 +185,17 @@
 									</header>
 									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 									<p>Improved organization-wide employee retention by implementing new surveying methods, making final recommendations to change onboarding and employee training initiatives to improve satisfaction. Identified common issues across departments that resulted in low employee retention rates. </p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<!-- Full Story Button -->
+									<button class="fullStoryBtn button">Full Story</button>
+
+									<!-- Popup Div -->
+									<div class="popup">
+										<div class="popup-content">
+											<span class="close">&times;</span>
+											<h2>Data Science</h2>
+											<p>Here is the detailed text about UNC Health BR Data Science...</p>
+										</div>
+									</div>
 								</article>
 							</section>
 
@@ -150,7 +209,7 @@
 							</footer>
 
 					</div>
-
+				
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
@@ -194,6 +253,7 @@
 								<ul class="icons alt">
 									
 									<li><a href="https://github.com/arnavmaniar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/arnav-maniar-513436282" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -214,6 +274,111 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					// Handle button clicks to show popups
+					document.querySelectorAll('.fullStoryBtn').forEach(function(button) {
+						button.addEventListener('click', function() {
+							var popup = this.closest('article').querySelector('.popup');
+							if (popup) {
+								popup.style.display = 'block';
+							}
+						});
+					});
+			
+					// Handle close button clicks to hide popups
+					document.querySelectorAll('.popup .close').forEach(function(closeBtn) {
+						closeBtn.addEventListener('click', function() {
+							var popup = this.closest('.popup');
+							if (popup) {
+								popup.style.display = 'none';
+							}
+						});
+					});
+			
+					// Handle clicks outside the popup to hide it
+					window.addEventListener('click', function(event) {
+						document.querySelectorAll('.popup').forEach(function(popup) {
+							if (event.target == popup) {
+								popup.style.display = 'none';
+							}
+						});
+					});
+				});
+			</script>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					// Handle showing/hiding the to-do list popup
+					var todoIcon = document.getElementById('todoIcon');
+					var todoPopup = document.getElementById('todoPopup');
+					var closeBtn = todoPopup.querySelector('.close');
+					
+					todoIcon.onclick = function() {
+						todoPopup.style.display = 'block';
+					}
+					
+					closeBtn.onclick = function() {
+						todoPopup.style.display = 'none';
+					}
+					
+					window.onclick = function(event) {
+						if (event.target == todoPopup) {
+							todoPopup.style.display = 'none';
+						}
+					}
+		
+					// Handle adding to-do items
+					var addTodoBtn = document.getElementById('addTodoBtn');
+					var todoInput = document.getElementById('todoInput');
+					var todoList = document.getElementById('todoList');
+		
+					function loadTodos() {
+						var todos = JSON.parse(localStorage.getItem('todos')) || [];
+						todos.forEach(function(todo) {
+							addTodoItem(todo);
+						});
+					}
+		
+					function addTodoItem(todo) {
+						var li = document.createElement('li');
+						li.textContent = todo;
+						li.style.position = 'relative';
+		
+						var removeBtn = document.createElement('span');
+						removeBtn.textContent = '×';
+						removeBtn.className = 'remove-btn';
+						removeBtn.onclick = function() {
+							todoList.removeChild(li);
+							removeTodoFromStorage(todo);
+						};
+		
+						li.appendChild(removeBtn);
+						todoList.appendChild(li);
+					}
+		
+					function removeTodoFromStorage(todo) {
+						var todos = JSON.parse(localStorage.getItem('todos')) || [];
+						var index = todos.indexOf(todo);
+						if (index > -1) {
+							todos.splice(index, 1);
+							localStorage.setItem('todos', JSON.stringify(todos));
+						}
+					}
+		
+					addTodoBtn.onclick = function() {
+						var todo = todoInput.value.trim();
+						if (todo) {
+							addTodoItem(todo);
+							var todos = JSON.parse(localStorage.getItem('todos')) || [];
+							todos.push(todo);
+							localStorage.setItem('todos', JSON.stringify(todos));
+							todoInput.value = '';
+						}
+					}
+		
+					loadTodos();
+				});
+			</script>
 
 	</body>
 </html>
