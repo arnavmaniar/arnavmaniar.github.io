@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>About Me - Arnav Maniar</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper" class="fade-in">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="/" class="logo">Home</a>
+            </header>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="papers.html">Papers</a></li>
+                    <li><a href="elements.html">Elements Reference</a></li>
+                    <li class="active"><a href="about.html">About Me</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://github.com/arnavmaniar" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/arnav-maniar-513436282" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+                <section>
+                    <header class="major">
+                        <h2>About Me</h2>
+                    </header>
+                    <p>Hi, I'm Arnav Maniar. I'm a 17-year-old who loves all things data, finance, and code. I have a passion for learning and exploring new technologies. This portfolio showcases my projects, papers, and other works. Feel free to explore and connect with me on LinkedIn or GitHub.</p>
+                </section>
+            </div>
+
+            <!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>School</h3>
+								<p>North Carolina School of Science & Mathematics: Morganton </br> 
+								901 Burkemont Avenue, Morganton, NC, 28655
+								</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(980) 800-2041</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:amaniar.007@gmail.com">amaniar.007@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									
+									<li><a href="https://github.com/arnavmaniar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/arnav-maniar-513436282" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+        <!-- JavaScript -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Handle showing/hiding the to-do list popup
+                var todoIcon = document.getElementById('todoIcon');
+                var todoPopup = document.getElementById('todoPopup');
+                var closeBtn = todoPopup.querySelector('.close');
+                
+                todoIcon.onclick = function() {
+                    todoPopup.style.display = 'block';
+                }
+                
+                closeBtn.onclick = function() {
+                    todoPopup.style.display = 'none';
+                }
+                
+                window.onclick = function(event) {
+                    if (event.target == todoPopup) {
+                        todoPopup.style.display = 'none';
+                    }
+                }
+
+                // Handle adding to-do items
+                var addTodoBtn = document.getElementById('addTodoBtn');
+                var todoInput = document.getElementById('todoInput');
+                var todoList = document.getElementById('todoList');
+
+                function loadTodos() {
+                    var todos = JSON.parse(localStorage.getItem('todos')) || [];
+                    todos.forEach(function(todo) {
+                        addTodoItem(todo);
+                    });
+                }
+
+                function addTodoItem(todo) {
+                    var li = document.createElement('li');
+                    li.textContent = todo;
+                    li.style.position = 'relative';
+
+                    var removeBtn = document.createElement('span');
+                    removeBtn.textContent = '×';
+                    removeBtn.className = 'remove-btn';
+                    removeBtn.onclick = function() {
+                        todoList.removeChild(li);
+                        removeTodoFromStorage(todo);
+                    };
+
+                    li.appendChild(removeBtn);
+                    todoList.appendChild(li);
+                }
+
+                function removeTodoFromStorage(todo) {
+                    var todos = JSON.parse(localStorage.getItem('todos')) || [];
+                    var index = todos.indexOf(todo);
+                    if (index > -1) {
+                        todos.splice(index, 1);
+                        localStorage.setItem('todos', JSON.stringify(todos));
+                    }
+                }
+
+                addTodoBtn.onclick = function() {
+                    var todo = todoInput.value.trim();
+                    if (todo) {
+                        addTodoItem(todo);
+                        var todos = JSON.parse(localStorage.getItem('todos')) || [];
+                        todos.push(todo);
+                        localStorage.setItem('todos', JSON.stringify(todos));
+                        todoInput.value = '';
+                    }
+                }
+
+                loadTodos();
+            });
+        </script>
+    </body>
+</html>
