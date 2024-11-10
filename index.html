@@ -73,7 +73,7 @@
 										By reducing denial rates and providing necessary documents, it saves hospitals millions annually in write-offs, <br />
 										 enhancing efficiency in emergency situations. </p>
 								</header>
-								<a href="#" class="image main"><img src="documents/cpt.png" alt="" /></a>
+								<a class="image main"><img src="documents/cpt.png" alt="" /></a>
 									<ul class="actions special">
 										<li><button class="fullStoryBtn button large">Read Me!</button></li>
 									</ul>
@@ -98,7 +98,7 @@
 									<header>
 										<h2><a href="https://github.com/arnavmaniar/StockVision">Predictive Share Pricing <br />Machine Learning Model</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="documents/stockvision.png" alt="" /></a>
+									<a class="image fit"><img src="documents/stockvision.png" alt="" /></a>
 									<p>Using share pricing changes since IPO of the Magnificent 7 to attempt to accurately forecast share prices. Uses numerous forms of regression and ML models, then takes the highest accuracy one. Planning to add investor sentiment from Reddit/X soon for more accurate predictions. </p>
 									<!-- Full Story Button -->
 									<button class="fullStoryBtn button">Full Story</button>
@@ -108,7 +108,16 @@
 										<div class="popup-content">
 											<span class="close">&times;</span>
 											<h2>Predictive Share Pricing</h2>
-											<p>Here is the detailed text about Predictive Share Pricing...</p>
+											<p>This project, StockVision, is designed to forecast stock prices by implementing multiple machine learning regression models. Using scikit-learn, it builds predictive models from historical stock data, with each model capturing distinct patterns to offer a robust forecast across various stocks.
+												The workflow begins with data preprocessing, where historical price data undergoes feature engineering to include temporal information (year, month, day, day of the week) and lag-based features, capturing recent closing prices as predictive inputs. These enhanced features provide the models with both temporal and sequential price information. <br>											
+												Five machine learning models: Linear Regression, Ridge Regression, Lasso Regression, Random Forest Regressor, and Gradient Boosting Regressor, are trained and evaluated using Mean Squared Error (MSE) and R² metrics. Each model's performance is assessed on a test set to understand its predictive accuracy and generalization ability. The Random Forest and Gradient Boosting Regressors, with their capacity for handling non-linearity, often show superior performance in capturing price trends and volatility.												
+												For forecasting, the project iteratively uses the best-performing model, updating lag features based on the latest forecasted price to generate sequential future predictions. This iterative approach captures temporal dependencies in stock movements and offers a dynamic prediction that adapts as new data points emerge. <br>											
+												As of now, this project is in its early stages, with plans to incorporate investor sentiment data from Reddit and other social media platforms to enhance the model's predictive power. By integrating sentiment analysis, StockVision aims to capture market sentiment and investor behavior, offering a more comprehensive view of stock price movements. Due to a lack of availability of data, it is difficult to accurate predict stock prices as they fluctuate based on a variety of live factors. <br>
+												The next steps for this project are to: <br>
+												1. Implement a more robust sentiment analysis model to capture investor sentiment from social media platforms. <br>
+												2. Ensure the model is able to handle this live data and display predictions in real-time to users on streamlit. </p>
+												
+											</p>
 										</div>
 									</div>
 								</article>
@@ -118,7 +127,7 @@
 									<header>
 										<h2><a href="https://uncbrmodel.streamlit.app/">UNC Health Blue Ridge<br />RVU Predictions with ML</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="documents/rvu.png" alt="" /></a>
+									<a class="image fit"><img src="documents/rvu.png" alt="" /></a>
 									<p>Utilizing a random forest model, I predicted RVU's for providers under UNC Health BR based on patient size and appointments in 2023. Raw data was provided by UNC Health BR, and was cleaned and aggregated into one master file with all providers' data.</p>
 									<!-- Full Story Button -->
 									<ul class="actions special">
@@ -131,7 +140,7 @@
 										<h2><a href="https://devpost.com/software/zephyrotech">ZephryoTech<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="documents/pic04.jpg" alt="" /></a>
+									<a class="image fit"><img src="documents/turbine.jpg" alt="" /></a>
 									<p>Built to optimizs wind turbine placement within US mainland and increases renewable energy efficiency for clients. We streamline calculations, aggregating all data for the selected area and suggesting the most efficient turbine model from a master list for that area. Additionally, we provide MLS land listings for suggested turbine locations based on the number of turbines.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/arnavmaniar/Hackathon2024" class="button">GitHub</a></li>
@@ -143,19 +152,11 @@
 										<h2><a href="https://github.com/arnavmaniar/m-a-calculator">M&A Sheet Balancer<br />
 										</a></h2>
 									</header>
-									<a class="image fit"><img src="documents/pic05.jpg" alt="" /></a>
+									<a class="image fit"><img src="documents/mna.jpg" alt="" /></a>
 									<p>A terminal-based program that automatically calculates goodwill, equity, transaction adjustments, and valuations and balances the acquiring company's balance sheet in an M&A deal based on user inputs. </p>
-									<!-- Full Story Button -->
-									<button class="fullStoryBtn button">Full Story</button>
-
-									<!-- Popup Div -->
-									<div class="popup">
-										<div class="popup-content">
-											<span class="close">&times;</span>
-											<h2>M&A Balancer</h2>
-											<p>Here is the detailed text about M&A Balancer...</p>
-										</div>
-									</div>
+									<ul class="actions special">
+										<li><a href="https://github.com/arnavmaniar/m-a-calculator" class="button">GitHub</a></li>
+									</ul>
 								</article>
 								<article>
 									<header>
@@ -193,7 +194,7 @@
 										<h2><a href="https://github.com/arnavmaniar/S-P-Data-Analysis">S&P 500 Data Analysis<br />
 										</a></h2>
 									</header>
-									<a class="image fit"><img src="documents/pic06.jpg" alt="" /></a>
+									<a class="image fit"><img src="documents/s&p.jpeg" alt="" /></a>
 									<p> Analyzed S&P data from 1927 to 2017 in R to find trends and visualize conclusions. Cleant, calculated, and visualized the best and worst days by index performance, and presented to 40+ students on the findings.</p> 
 									<!-- Full Story Button -->
 									<button class="fullStoryBtn button">Full Story</button>
@@ -203,7 +204,7 @@
 										<div class="popup-content">
 											<span class="close">&times;</span>
 											<h2>S&P Data Analysis</h2>
-											<p>Here is the detailed text about S&P Data ...</p>
+											<p>Below, you will find the compiled report that was my output in R. This project was created to test my skills in R, and most importantly, to identify the best or worst days in recent S&P history. I wanted to explore the returns on a daily basis during the 2008 financial crisis, hence why I chose to create the daysReturn variable and sort by them.</p>
 											<iframe src="documents/papers/S&P 500 Data Output.pdf" width="100%" height="400px"></iframe>
 										</div>
 									</div>
